@@ -1,0 +1,133 @@
+
+.box1{
+    grid-area: header;
+    padding: 50px 0;
+    background-color: blue;
+    background-image: url(../images/flower1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box2{
+    grid-area: main1;
+    padding: 30px;
+    background-color: chartreuse;
+    background-image: url(../images/flower2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box3{
+    grid-area: main2;
+    background-color:brown;
+    padding: 30px;
+    background-image: url(../images/flower3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box4{
+    grid-area: main3;
+    background-color:aqua;
+    padding: 30px;
+    background-image: url(../images/flower4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box5{
+    grid-area: main4;
+    background-color:blanchedalmond;
+    padding: 30px;
+    background-image: url(../images/flower5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box6{
+    grid-area: footer1;
+    background-color:black;
+    padding: 30px;
+    background-image: url(../images/new_flower1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box7{
+    grid-area: footer2;
+    background-color:blueviolet;
+    padding: 30px;
+    background-image: url(../images/new_flower2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box8{
+    grid-area: footer3;
+    background-color:darkgreen;
+    padding: 30px;
+    background-image: url(../images/new_flower3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box9{
+    grid-area: footer4;
+    background-color:coral;
+    padding: 30px;
+    background-image: url(../images/new_flower4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box10{
+    grid-area: footer5;
+    background-color:crimson;
+    padding: 30px;
+    background-image: url(../images/flower1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box11{
+    grid-area: footer6;
+    background-color:cyan;
+    padding: 30px;
+    background-image: url(../images/flower2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_container{
+    display: grid;
+    grid-gap:5px 5px;
+    grid-template-areas: 
+    'header header header header header header'
+    'main1  main1  main2  main2  main3  main3'
+    'main1  main1  main2  main2  main4  main4'
+    'footer1 footer1 footer2 footer3 footer6 footer6'
+    'footer1 footer1 footer4 footer5 footer6 footer6';
+
+}
+
+
+/* small device grid responsive */
+@media screen and (max-width:576px) {
+    .grid_container{
+        grid-template-areas: 'header' 'main1' 'main2' 'main3' 'main4' 'footer1' 'footer2' 'footer3' 'footer4' 'footer5' 'footer6';
+    }
+    .box1,.box3,.box5,.box7,.box9,.box11{
+        height: 200px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 85px;
+    }
+    .box2,.box4,.box6,.box8,.box10{
+        height: 200px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 85px;
+        color:yellow;
+    }
+}
